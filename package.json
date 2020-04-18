@@ -1,0 +1,13 @@
+{
+  "name": "aws-playground",
+  "private": true,
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name aws_playground --log ../logs/server.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop aws_playground"
+  },
+  "dependencies": {
+    "pm2": "^4.3.0"
+  }
+}
